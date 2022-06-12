@@ -254,6 +254,7 @@ body {
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
     border: 1px solid var(--accent-color);
+    cursor: pointer;
 }
 .modal:hover,
 .modal:focus {
@@ -561,6 +562,11 @@ margin-bottom: 20px;
     height: 100%;
     background: rgba(0, 0, 0, 0.2);
 }
+.backdrop.is-hidden {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+}
 .modal-window {
     width: 528px;
     height: 581px;
@@ -569,6 +575,23 @@ margin-bottom: 20px;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    border-radius: 4px;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
 }
-
+.modal-close-button {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30px;
+    height: 30px;
+    background-color: transparent;
+    padding: 0;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 50%;
+    cursor: pointer;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14)
+}
 
