@@ -78,14 +78,14 @@ body {
         border-radius: 2px;
         background: var(--accent-color);
         left: 0;
-        bottom: -31px;
-        transform: scaleX(0);
-    transition: transform  250ms var(--timing-function);
+        bottom: -32px;
+       /*transform: scaleX(0);
+    transition: transform  250ms var(--timing-function);*/
 }
-.menu-link:hover::after,
+/*.menu-link:hover::after,
 .menu-link:focus::after {
     transform: scaleX(1);
-}
+}*/
 .menu-link:hover,
 .menu-link:focus {
     color: var(--accent-color);
