@@ -76,16 +76,11 @@ body {
         width: 100%;
         height: 4px;
         border-radius: 2px;
-        background: var(--accent-color);
         left: 0;
         bottom: -32px;
-       /*transform: scaleX(0);
-    transition: transform  250ms var(--timing-function);*/
+        color: var(--accent-color);
+        background: var(--accent-color);
 }
-/*.menu-link:hover::after,
-.menu-link:focus::after {
-    transform: scaleX(1);
-}*/
 .menu-link:hover,
 .menu-link:focus {
     color: var(--accent-color);
@@ -252,16 +247,15 @@ body {
     background-color: var(--background-container-color);
     border-radius: 4px;
     padding: 6px 22px;
-    border: 1px solid var(--border-color);
+    border: transparent;
     transition: color 250ms var(--timing-function),
-    background-color 250ms var(--timing-function);
+    background-color 250ms var(--timing-function), box-shadow 250ms var(--timing-function);
 }
 .modal:hover,
 .modal:focus {
     background-color: var(--accent-color);
     color: #ffffff;
     box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
-    border: 1px solid var(--accent-color);
 }
 .modal-hero {
     color: #FFFFFF;
@@ -349,7 +343,6 @@ body {
     left: 0;
     position: absolute;
     background: rgba(47, 48, 58, 0.8);
-    padding: 27px 82px;
 }
 .work-card-img-wrapper {
     position: relative;
@@ -445,6 +438,7 @@ margin-right: 30px;
 }
 .card-link-portfolio {
     display: block;
+    transition: box-shadow 250ms var(--timing-function);
 }
 
 .card-link-portfolio:hover,
@@ -613,6 +607,8 @@ margin-bottom: 20px;
     width: 100%;
     height: 100%;
     background: rgba(0, 0, 0, 0.2);
+    transition: opacity 250ms var(--timing-function),
+            visibility 250ms var(--timing-function);
 }
 .backdrop.is-hidden {
     opacity: 0;
